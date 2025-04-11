@@ -1,7 +1,7 @@
-# Importing the requests module to make HTTP requests
+# Importing the requests module to make HTTP requests.
 import requests
 
-#  Function to get the current weather
+#  Function to get the current weather for city
 def get_current_weather(city, api_key):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
